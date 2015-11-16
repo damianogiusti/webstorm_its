@@ -1,0 +1,10 @@
+li {
+    list-style-type: none;
+    border-left: double;
+    padding-left: 1em;
+    margin: 0.5em;
+}
+
+textarea {
+    resize: none;
+}

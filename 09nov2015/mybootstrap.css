@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.menu {
+    margin: 1em;
+}
+
+.menu a, a:visited {
+    color: #0055ff;
+    border-left: double;
+    padding: 0px 10px 0px 10px;
+}
+
+.menu a:hover {
+    background: #0055ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.paragrafi p {
+    padding: 5px;
+}
+
+.prodotti {
+    border-collapse: collapse;
+    border: 1px solid #00a0ff;
+    width: 100%;
+    margin-top: 2em;
+}
+.prodotti th {
+    color: #fff;
+    background: #0055ff;
+    text-align: center;
+}
+
+.prodotti th, .prodotti tr, .prodotti td {
+    border: 1px solid #00a0ff;
+    padding-left: 1em;
+}
+
+.footer {
+    background: #eee;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+}

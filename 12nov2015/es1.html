@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" type="text/css">
+    <link rel="stylesheet" href="es1-style.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 titolo">
+            <h1>es1-standard</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 menu">
+            <ul>
+                <li><a href="es1.html">es1-standard</a></li>
+                <li><a href="es1-variant.html">es1-variant</a></li>
+                <li><a href="es2.html">es2-standard</a></li>
+                <li><a href="#">Menu entry</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-8">
+            <form action="es1.html" method="post">
+                <fieldset>
+                    <legend>Form</legend>
+                    <label for="txtNome">Nome:</label> <br/>
+                    <input id="txtNome" type="text" name="name"/> <br/>
+
+                    <label for="txtEmail">Email:</label> <br/>
+                    <input id="txtEmail" type="email" name="email"/> <br/>
+
+                    <label for="txtTesto">Testo:</label> <br/>
+                    <textarea id="txtTesto"
+                              name="testo"
+                              rows="25"
+                              cols="80"></textarea> <br/>
+
+                    <input id="cbPrivacy" type="checkbox" name="privacy"/>
+                    <label for="cbPrivacy">privacy</label> <br/>
+
+                    <input type="submit" value="Invia"/>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" type="text/css">
+    <link rel="stylesheet" href="es2-style.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 titolo">
+            <h1>es2-standard</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 menu">
+            <ul>
+                <li><a href="es1.html">es1-standard</a></li>
+                <li><a href="es1-variant.html">es1-variant</a></li>
+                <li><a href="es2.html">es2-standard</a></li>
+                <li><a href="#">Menu entry</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <form action="es1-variant.html" method="post">
+
+                <div class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="txtNome">Nome</label>
+                        <input id="txtNome" class="form-control" type="text" name="name"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtEmail">Email</label>
+                        <input id="txtEmail" class="form-control" type="email" name="email"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txtTesto">Testo</label>
+                        <textarea id="txtTesto"
+                                  name="testo"
+                                  rows="25"
+                                  cols="80"
+                                  class="form-control"></textarea>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="cbPrivacy">Privacy</label>
+                        <input id="cbPrivacy" type="checkbox" name="privacy"/>
+                    </div>
+
+                    <!-- submit -->
+                    <div class="form-group">
+                        <input type="submit" value="Invia" class="btn btn-primary"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-3 newsletter">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultricies, lacus eget dapibus finibus,
+                magna lacus condimentum velit, efficitur dictum lacus tellus vel quam. In bibendum, massa vitae semper
+                ullamcorper, nulla nulla laoreet mi, sed aliquet risus lorem at velit. Nunc consequat consequat lacus in
+                elementum. Mauris sed rhoncus ex. Aliquam vel ante quis magna aliquam commodo eget sed magna. Aliquam
+                odio massa, venenatis non posuere non, sodales ut diam. Vestibulum dignissim blandit viverra. Nam
+                ultricies, tortor viverra accumsan aliquet, velit augue ultrices felis, vitae elementum tortor neque sed
+                magna. Aenean quis urna nisi. Curabitur sodales in magna vel ornare.</p>
+
+            <form class="form-inline" method="post" action="es2.html">
+                <div class="row">
+                    <div class="col-xs-9">
+                        <input type="email"
+                               name="email"
+                               id="txtNewsletter"
+                               placeholder="yourname@domain.something"
+                               class="form-control"/>
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="submit" value="Iscriviti!" class="btn"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

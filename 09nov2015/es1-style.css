@@ -1,0 +1,78 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+#menu {
+    float: left;
+    width: 100%;
+    color: #0055ff;
+    padding: 0px;
+}
+
+#menu li {
+    float: left;
+    width: 24%;
+    list-style-type: none;
+    border-left: double;
+    padding-left: 5px;
+}
+
+li:hover {
+    background: #0055ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container {
+    float: left;
+    width: 100%;
+}
+
+#div-p1 {
+    float: left;
+    width: 70%;
+}
+
+#div-p2 {
+
+    float: left;
+    width: 30%;
+}
+
+#p1, #p2 {
+    margin: 0.5em;
+}
+
+.tabella {
+    margin-top: 3em;
+    float: left;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #00a0ff;
+    width: 100%;
+}
+
+th, tr, td {
+    border: 1px solid #00a0ff;
+    padding: 3px;
+}
+
+th {
+    color: #fff;
+    background: #0055ff;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    padding: 1em;
+}
+
+a, a:visited {
+}

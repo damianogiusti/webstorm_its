@@ -1,0 +1,240 @@
+html {
+    font-family: android;
+    background: #24292f; /* linear-gradient(to bottom, #050607, #24292f) fixed;*/
+    width: 100%;
+    /*color: #31FF26;*/
+    color: #f3f3f3;
+}
+
+@font-face {
+    font-family: android;
+    src: url("droidlogger/Roboto-Regular.ttf"); /* url("HelveticaNeue.otf"); */
+}
+
+/* ------------SITO IN COSTRUZIONE ------------*/
+table.build {
+    margin: auto
+}
+
+table.build h1 {
+    font-size: 3em
+}
+
+table.build p {
+    font-size: 1.5em
+}
+
+#graph {
+    font-size: 25em;
+    color: #b5e61d;
+}
+
+input[type="submit"], input[type="button"] {
+    background: #23292e;
+    border-top-color: #44494d;
+    border-bottom-color: #131619;
+    border-left: none;
+    border-right: none;
+    color: #f3f3f3;
+    font-family: inherit;
+    font-size: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    border-radius: 0.15em;
+}
+
+select {
+    background: inherit;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px;
+    border-radius: 0.15em;
+    border-color: #0099cc;
+    color: inherit;
+    font-family: android;
+    background: #24292f;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1em;
+}
+
+div.intestazione {
+    background: #222222;
+    text-align: left;
+
+    width: 100%;
+    /*padding-top: 1em;*/
+    padding-left: 3em;
+    /*padding-bottom: 1em;*/
+
+    border: outset;
+    border-left: none;
+    border-top-color: #2d2d2d;
+    border-bottom-color: #1b1b1b;
+    border-left: none;
+    border-right: none;
+}
+
+div.intestazione img {
+    height: 5em;
+    padding-right: 3em;
+}
+
+div.intestazione h1 {
+    font-size: 3em;
+}
+
+div.navmenu {
+    color: #bebebe;
+    text-align: left;
+    text-decoration: none;
+}
+
+div.navmenu a {
+    color: #0099cc; /*#51a200;*/
+    padding-right: 2em;
+}
+
+h3 {
+    color: #bebebe;
+    border-bottom: solid 2px;
+    text-align: left
+}
+
+/**** scheda applicazione ****/
+
+div.riepilogo {
+    background: inherit;
+    margin: 1.5em;
+}
+
+div.riepilogo td {
+    text-align: left;
+    padding-right: 1em;
+}
+
+/**** bugs dell'app ****/
+div.bugs {
+    background: none;
+    margin: 1.5em;
+}
+
+div.bugs td {
+    text-align: left;
+    padding-right: 2em;
+}
+
+div.bugs table {
+    padding-top: 1em;
+    /* border-bottom: outset 1px;*/
+    padding-bottom: 1em;
+}
+
+/**** filtri dei log ****/
+
+div.filtri_log {
+    background: none;
+    margin: 1.5em;
+    text-align: center;
+}
+
+div.filtri_log table {
+    margin: auto;
+}
+
+div.filtri_log table th, div.filtri_log table td {
+    padding-right: 3em;
+    padding-left: 3em;
+    text-align: center;
+}
+
+/**** tabella dei log ****/
+
+div.elenco_log table {
+    overflow: scroll;
+    margin: 1em;
+    width: 50%;
+    margin: auto;
+}
+
+table.tbl_log th /*th della tabella elenco log*/
+{
+    color: #51a200;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    margin: 0;
+    text-align: center;
+}
+
+table.tbl_log td /* td della tabella elenco log*/
+{
+    padding-right: 3em;
+    padding-left: 3em;
+    border-top: solid 1px;
+    margin: 0;
+    text-align: center;
+
+    word-wrap: break-word;
+    overflow: auto
+}
+
+td.cella_log {
+    word-wrap: break-word;
+    overflow: auto
+}
+
+/**** tabella elenco device ****/
+div.elenco_device table {
+    margin: auto;
+}
+
+div.elenco_device th {
+    color: #51a200;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    margin: 0;
+    text-align: center;
+}
+
+div.elenco_device td {
+    padding-right: 3em;
+    padding-left: 3em;
+    border-top: solid 1px;
+    margin: 0;
+    text-align: center;
+
+    word-wrap: break-word;
+    overflow: auto
+}
+
+ul {
+    color: #bebebe;
+
+    margin: auto;
+    list-style-type: none;
+    padding: 0;
+    padding-top: 5em;
+    height: 100%;
+}
+
+div.le_mie_app li {
+    margin: auto;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    width: 100%;
+    border-color: inherit;
+    padding: 1em;
+    font-size: 2em;
+}
+
+table.li td {
+    padding: 1em;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none
+}

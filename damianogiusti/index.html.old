@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Homepage</title>
+<meta name="generator" content="Alterpages" />
+
+
+<link href="http://it.altervista.org/css/alterpages/layout.css" rel="stylesheet" type="text/css" media="screen" />
+<link id="apcss" rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="http://it.altervista.org/alterpages/common.php"></script>
+<!--
+
+NON MODIFICARE L'HTML DI QUESTA PAGINA !!!Questa pagina e` gestita da AlterPages. Eventuali modifiche manuali andranno perse.Per domande e dubbi e` a disposizione in nostro forum di supporto: http://forum.it.altervista.org/
+
+-->
+
+</head>
+
+<body>
+
+<div id="wrap">
+	<div class="grid_11">
+		<div id="header" class="main-style"><div class="widget title"><h1 style="padding-top:0px;padding-left:0px;padding-right:0px;text-align:left">GD apps & more</h1></div><div class="widget widget-nav">
+<ul class="nav">
+
+<li><a href="/index.html">Homepage</a>
+
+</li>
+
+<li><a href="/chisiamo.html">Chi siamo</a>
+
+</li>
+
+<li><a href="/contatti.html">Contatti</a>
+
+</li>
+
+</ul>
+<div class="clear"></div>
+</div></div>
+	</div>
+	<div class="grid_9 left">
+		<div id="content" class="main-style"><div class="widget title"><h2>Come funziona</h2></div><div class="widget" style="text-align:center"><iframe title="YouTube video player" width="500" height="311" src="http://www.youtube.com/embed/fs1w96lwO_k" frameborder="0" allowfullscreen></iframe></div><div class="widget"><p>
+	Clicca sul pulsante <strong>Edit</strong> per cominciare a modificare il tuo sito. Una volta effettuato l&#39;ingresso puoi posizionare dove vuoi questo tasto <strong>Edit</strong> o cancellarlo e usare il pulsante <strong>Edit</strong> in fondo alla pagina.</p>
+</div><div class="widget">
+  <a class="page-edit" href="#" onclick="return apStartEditor()"><span>|</span> Edit</a>
+</div>
+<div class="widget title"><h2>Costruisci il tuo sito</h2></div><div class="widget">
+
+<img src="http://im.altervista.org/alterpages/thinkstock/medium/108535790.jpg" class="align-left img-medium" alt="" title=""/>
+
+
+<p>
+	<strong>Modifica la</strong> <strong>grafica</strong>: il layout, lo stile, la testata, i colori e lo sfondo. In avanzate trovi gli strumenti per personalizzare il tuo sito.</p>
+<p>
+	<strong>Inserisci i tuoi</strong> <strong>contenuti</strong>: modifica gli elementi presenti, aggiungine nuovi e disponili come preferisci.</p>
+<p>
+	<strong>Puoi creare infinite</strong> <strong>pagine</strong> oltre a questa. Vai su <em>Pagine</em> nella barra in basso a destra, clicca su <em>Aggiungi pagina</em> e scegli come ordinarle.</p>
+<p>
+	Usa il <strong>forum</strong> di AlterVista per risolvere problemi o ricevere suggerimenti: vai a <a href="http://forum.it.altervista.org/">Forum &gt; AlterPages</a>.</p>
+
+</div>
+</div>
+	</div>
+	<div class="grid_10 left">
+		<div id="sidebar" class="main-style"><div class="widget title"><h2>Benvenuto</h2></div><div class="widget">
+<img src="http://im.altervista.org/alterpages/thinkstock/small/106470010.jpg" class="align-left img-small" alt="" title=""/>
+
+<p>
+	<strong>Elementi</strong></p>
+<p>
+	Modifica, sposta, aggiungi o rimuovi gli elementi gi&agrave; presenti sulla pagina.</p>
+<p>
+	<strong>Grafica</strong></p>
+<p>
+	Usa la barra in basso a destra per modificare la grafica del sito.</p>
+<p>
+	<strong>Sidebar</strong></p>
+<p>
+	Qui puoi inserire un banner pubblicitario e/o altri contenuti. La sidebar &egrave; uguale in tutte le pagine del sito.</p>
+
+</div>
+<div class="widget">
+
+
+<img src="http://im.altervista.org/adv/alter_300x250.gif" class="align-center img-medium" alt="" title=""/>
+
+
+</div></div>
+	</div>
+	<div class="grid_11 clear">
+		<div id="footer" class="main-style"><div class="widget">Copyright 2011<br></div></div>
+	</div>
+</div>
+
+<div id="footer-edit">
+	<a class="page-edit" href="#" onclick="return apStartEditor()" id="edit-switch" title="Modifica la pagina"><span>|</span> Edit</a>
+	<a class="av-link" href="http://it.altervista.org/" target="_blank" title="Crea sito web gratis">AlterVista</a>
+	<br />
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+  switchToMobileLink();
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1240215-6']);
+  _gaq.push(['_setDomainName', 'altervista.org']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_setCustomVar', 1, 'DisplayMode', 'desktop']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+/* ]]> */
+</script>
+
+</body>
+</html>
