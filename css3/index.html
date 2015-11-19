@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prova ccs3</title>
+
+    <style>
+
+        ::selection {
+            background: lightblue;
+            color: white;
+        }
+
+        .pnl {
+            border: 1px solid #ff0000;
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            word-wrap: break-word;
+
+            -webkit-transition: 5s;
+            -moz-transition: 5s ;
+            -ms-transition: 5s ;
+            -o-transition: 5s ;
+            transition: 5s ;
+
+
+
+        }
+
+        .pnl:hover {
+            -webkit-box-shadow: inset 0px 0px 3px #000;
+            -moz-box-shadow: inset 0px 0px 3px #000;
+            box-shadow: inset 0px 0px 3px #000;
+           /* -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);*/
+
+            -webkit-transform: rotateY(360deg) rotateX(360deg) scale(2,2);
+            -moz-transform: rotateY(360deg) rotateX(360deg) scale(2,2);
+            -ms-transform: rotateY(360deg) rotateX(360deg) scale(2,2);
+            -o-transform: rotateY(360deg) rotateX(360deg) scale(2,2);
+            transform: rotateY(360deg) rotateX(360deg) scale(2,2);
+        }
+    </style>
+
+</head>
+<body>
+<div class="pnl">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla arcu mi, et rutrum mi vulputate
+        vitae. Fusce quis nisi vel tortor facilisis tincidunt in id nisi. Etiam libero risus, porta quis hendrerit quis,
+        tincidunt ac velit. Praesent eget nisl dignissim, bibendum sem quis, varius elit. Donec ac vulputate erat, ac
+        tincidunt nisi. Vivamus blandit nulla eu tempor tristique. In euismod convallis faucibus. Aenean sapien ligula,
+        dictum a rhoncus id, auctor id ligula. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Aenean mattis sed est at pulvinar. Vestibulum tristique aliquam
+        dolor iaculis iaculis. Ut rutrum, elit sit amet sagittis volutpat, diam tellus auctor lorem, et facilisis odio
+        quam in dolor.
+    </p>
+</div>
+</body>
+</html>

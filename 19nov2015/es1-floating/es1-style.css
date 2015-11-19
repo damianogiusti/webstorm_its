@@ -1,0 +1,249 @@
+body {
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    background-color: #388E3C;
+    padding: 0px;
+    margin: 0px;
+    color: #212121;
+}
+
+.container {
+    margin: 0em 20% 0em 20%;
+    width: 60%;
+    background-color: #f3f3f3;
+    position: fixed;
+    overflow-y: scroll;
+    height: 100%;
+    box-shadow: 0px 0px 20px #212121;
+}
+
+.title-menu-bar {
+    background-color: #4CAF50;
+    margin: 0px;
+}
+
+.titolo {
+    font-size: 1.5em;
+    color: #fff;
+    padding: 1em 2em 1em 2em;
+}
+
+.titolo h1 {
+    margin: 0px;
+}
+
+.menu {
+    font-size: 1.1em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu a {
+    padding-left: 0.5em;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.menu ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+/* MENU ORIZZONTALE */
+
+.menu-hor li {
+    float: left;
+    width: 50%;
+    color: #fff;
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    padding: 1em 0em 1em 0em;
+}
+
+.menu-hor a {
+    color: #fff;
+}
+
+/* MENU VERTICALE */
+
+.menu-ver {
+    float: left;
+    width: 30%;
+    padding: 0px;
+    margin: 0px;
+    color: #212121;
+}
+
+.menu-ver ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-ver li {
+    width: 100%;
+    border-bottom: 1px solid #B6B6B6;
+    border-right: 0px solid #B6B6B6;
+    margin: 0em 0em 0em 0em;
+    padding: 1em 0em 1em 0em;
+    border-collapse: collapse;
+}
+
+.menu-ver a {
+    padding-left: 3em;
+    color: #212121;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #B6B6B6;
+    clear: both;
+}
+
+.container-articoli {
+    /*padding: 1em 2em 0em 2em;*/
+    color: inherit;
+}
+
+.articolo {
+    margin: 0em 0em 2em 0em;
+    padding: 1em 2em 0em 2em;
+}
+
+.titolo-articolo a {
+    text-decoration: none;
+    color: #8BC34A;
+    font-size: 1.3em;
+}
+
+.data-ora-autore {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.author {
+    float: right;
+}
+
+.container-dx {
+    float: right;
+    width: 70%;
+}
+
+.container-dx-content {
+    padding: 0em 0em 0em 1em;
+}
+
+.container-dx img {
+    position: fixed;
+    float: left;
+}
+
+.main-article {
+    padding-right: 1em;
+}
+
+footer {
+    text-align: center;
+    bottom: 0px;
+}
+
+/* FORM */
+.form-labels {
+    float: left;
+    width: 30%;
+}
+
+.form-labels label {
+    display: block;
+}
+
+.form-fields {
+    float: right;
+    width: 70%;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 2px;
+    font-size: 0.9em;
+    background-color: #8BC34A;
+    color: #fff;
+    border: 0px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+    float: left;
+}
+
+.form-fields input[type="text"],
+.form-fields input[type="email"],
+.form-fields textarea {
+    border: 0px;
+    border-bottom: 1px solid #4CAF50;
+    width: 80%;
+    font-family:inherit;
+}
+
+.commenti {
+    margin-top: 5em;
+    font-style: italic;
+    bottom: 0px;
+    float: right;
+    width: 100%;
+    font-size: 0.8em;
+    background-color: #C8E6C9;
+}
+
+.form-commento {
+    margin: 1em;
+    border-radius: 0.5em;
+}
+
+.commenti h3 {
+    color: #388E3C;
+}
+
+.commenti label, .commenti input, .commenti textarea {
+    display: block;
+    margin: 0.5em 0em 1em 0.5em;
+}
+
+.commenti input[type="email"], .commenti textarea {
+    border: 0px;
+    border-bottom: 1px solid #8BC34A;
+    font-family: inherit;
+}
+
+.commenti fieldset {
+    border: 1px solid #8BC34A;
+    border-radius: 0.5em;
+}
+.commenti legend {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.lista-commenti {
+    background-color: inherit;
+    margin: 1em;
+}
+
+.lista-commenti h4 {
+    margin: 0px;
+}
+
+.commento {
+    margin: 1em;
+}
