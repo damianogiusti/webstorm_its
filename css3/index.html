@@ -6,6 +6,10 @@
 
     <style>
 
+        html {
+            font-family: sans-serif;
+        }
+
         ::selection {
             background: lightblue;
             color: white;
@@ -25,6 +29,7 @@
             -o-transition: 5s ;
             transition: 5s ;
 
+            display: none;
 
 
         }
@@ -45,6 +50,67 @@
             -o-transform: rotateY(360deg) rotateX(360deg) scale(2,2);
             transform: rotateY(360deg) rotateX(360deg) scale(2,2);
         }
+
+
+        h1 {
+            text-shadow: 5px 5px 5px #000;
+            -webkit-transition: text-shadow 2s;
+            -moz-transition: text-shadow 2s;
+            -ms-transition: text-shadow 2s;
+            -o-transition: text-shadow 2s;
+            transition: text-shadow 2s;
+            animation-timing-function: cubic-bezier();
+        }
+
+        h1:hover {
+            text-shadow: 100px 100px 10px #ff0000;
+        }
+
+
+        .tondo {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            -webkit-border-radius:20em;
+            -moz-border-radius:20em;
+            border-radius:20em;
+            -webkit-box-shadow: 0px 2px 2px #000;
+            -moz-box-shadow: 0px 2px 2px #000 ;
+            box-shadow: 0px 2px 2px #000 ;
+            position: relative;
+            /* Chrome, Safari, Opera */
+            -webkit-animation-name: example;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-delay: 2s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            /* Standard syntax */
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+
+        /* Standard syntax */
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
     </style>
 
 </head>
@@ -61,5 +127,12 @@
         quam in dolor.
     </p>
 </div>
+
+<div>
+    <h1>MEGATITOLONEEEEEEEE</h1>
+</div>
+
+<div class="tondo"></div>
+
 </body>
 </html>
