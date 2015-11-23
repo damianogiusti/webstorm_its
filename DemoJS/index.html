@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .myBtn {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+        }
+        .myBtn:hover {
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>DemoJS</h1>
+
+    <label for="txtName">Nome:</label>
+    <br/>
+
+    <input type="text" onkeyup="updateText()" id="txtName" value="Damiano" />
+
+    <br/>
+    <br/>
+    <div id="pnlResult"></div>
+
+    <div class="myBtn" onclick="alert('ciao');"></div>
+
+    <script type="text/javascript" src="scripts/demojs.js"></script>
+
+</body>
+</html>
