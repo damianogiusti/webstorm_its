@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input type="text" id="txtName" value="Damiano"/>
+    <div id="pnlResult"></div>
+
+    <script type="text/javascript" src="jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript">
+        var txt = $('#txtName');
+        var pnl = $('#pnlResult');
+
+        pnl.text(txt.val());
+
+        $('#txtName').one('keyup', function() {
+            alert($(this).val());
+        });
+    </script>
+</body>
+</html>

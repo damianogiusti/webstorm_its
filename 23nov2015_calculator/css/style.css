@@ -1,6 +1,9 @@
 body {
     background-color: #eee;
 }
+.container {
+
+}
 
 .calculator {
     font-size: 4em;
