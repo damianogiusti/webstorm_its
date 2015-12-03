@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link type="text/css" rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.min.css"/>
+    <script type="text/javascript" src="jquery/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+<input id="dt" type="text"/>
+
+<br/>
+
+<div id="popup" style="display: none;">
+    <p id="popupText">Testo</p>
+</div>
+
+<button type="button" id="btnApriPopup">Apri</button>
+
+<script type="text/javascript">
+    $('#dt').datepicker();
+
+    $('#btnApriPopup').on('click', function () {
+        $('#popupText').text('testo di prova');
+        $('#popup').dialog({
+            modal: true
+        });
+    });
+
+</script>
+
+</body>
+</html>

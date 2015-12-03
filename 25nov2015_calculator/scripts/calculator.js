@@ -2,7 +2,7 @@
  * Created by damiano on 23/11/15.
  */
 
-var div_display = document.getElementById("display");
+var div_display = $("#display");
 var numbers = ['', ''];     // numbers[0]: primo valore, risultato ; numbers[1]: secondo valore
 var current_num = '';
 var current_op = null;
@@ -11,6 +11,11 @@ var flag = true;
 document.body.onload = (function () {
     var altezza = document.documentElement.clientHeight;
     //document.getElementById("calculator").style.height = altezza + "px";
+});
+
+$('.number').on('click', function () {
+    var value = $(this).html();
+    number(value);
 });
 
 
@@ -28,6 +33,17 @@ function number(n) {
         pdisplay(numbers[1]);
     }
 }
+
+$('.operator').on('click', function () {
+    var value = $(this).html();
+    if (value == '=')
+        evaluate_calc();
+    else if (value == 'C')
+        init();
+    else
+        operator(value);
+});
+
 
 function operator(op) {
     // se ho gia inserito una cifra
@@ -70,15 +86,16 @@ function operator(op) {
 }
 
 function pdisplay(arg) {
-    div_display.innerHTML = arg;
+    console.log(arg)
+    div_display.html(arg);
 }
 
 function display() {
-    return div_display.innerHTML;
+    return div_display.html();
 }
 
 function init_display() {
-    div_display.innerHTML = "&nbsp;";
+    div_display.html("&nbsp;");
 }
 
 function init() {

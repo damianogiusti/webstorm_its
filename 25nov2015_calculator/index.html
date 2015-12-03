@@ -5,43 +5,49 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-
     <title>Title</title>
 </head>
 <body>
 
 <div class="container">
     <div class="row">
-        <div class="col-xs-12">
-
-
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 calculator" id="calculator">
             <div class="row">
-                <div class="col-xs-offset-3">
-                    <textarea id="textarea"
-                              cols="67"
-                              rows="15"
-                              onkeyup="charAdded()"></textarea>
-                </div>
+                <div class="col-sm-9 display" id="display">&nbsp;</div>
+                <div class="col-sm-3 operator">C</div>
             </div>
-
             <div class="row">
-                <div class="col-xs-offset-3 col-xs-3">
-                    <input type="button" class="btn-primary btn" onclick="btnClicked()" value="Aggiungi in coda"/>
-                </div>
-                <div class="col-xs-3">
-                    <div id="char-counter">0</div>
-                </div>
+                <div class="col-sm-3 number">7</div>
+                <div class="col-sm-3 number">8</div>
+                <div class="col-sm-3 number">9</div>
+                <div class="col-sm-3 operator">+</div>
             </div>
-
             <div class="row">
-                <ul class="col-xs-offset-3 col-xs-6" id="list"></ul>
+                <div class="col-sm-3 number">4</div>
+                <div class="col-sm-3 number">5</div>
+                <div class="col-sm-3 number">6</div>
+                <div class="col-sm-3 operator">-</div>
             </div>
-
+            <div class="row">
+                <div class="col-sm-3 number">1</div>
+                <div class="col-sm-3 number">2</div>
+                <div class="col-sm-3 number">3</div>
+                <div class="col-sm-3 operator">*</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 number">.</div>
+                <div class="col-sm-3 number">0</div>
+                <div class="col-sm-3 operator">=</div>
+                <div class="col-sm-3 operator">/</div>
+            </div>
         </div>
+        <div class="col-sm-2"></div>
     </div>
 </div>
 
-<script type="text/javascript" src="scripts/scripts.js"></script>
+<script type="text/javascript" src="jquery/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="scripts/calculator.js"></script>
 
 </body>
 </html>
