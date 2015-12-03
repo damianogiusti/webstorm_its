@@ -8,6 +8,16 @@
     <script type="text/javascript" src="jquery/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 
+    <style>
+        form * {
+            margin: 0.5em;
+        }
+        #btn {
+            margin: 1em;
+            float:right;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -16,13 +26,30 @@
 <br/>
 
 <div id="popup" style="display: none;">
-    <p id="popupText">Testo</p>
+    <form>
+        <label for="username">Username</label> <br />
+        <input type="text" id="username" value=""> <br />
+        <label for="password">Password</label> <br />
+        <input type="password" id="password" value=""> <br />
+        <button type="button" id="btn">LOGIN</button>
+
+    </form>
 </div>
 
 <button type="button" id="btnApriPopup">Apri</button>
 
 <script type="text/javascript">
     $('#dt').datepicker();
+
+
+    $('#btn').on('click', function () {
+        var user = $('#username').val();
+        var pass = $('#password').val();
+
+        alert('benvenuto ' + user);
+    })
+
+
 
     $('#btnApriPopup').on('click', function () {
         $('#popupText').text('testo di prova');
