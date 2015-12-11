@@ -23,11 +23,15 @@ var onClickEvent = function () {
 
         var result = ended();
 
-        if (result != null)
-            alert('ha vinto ' + result[0].className);
+        if (result != null) {
+            alert('Ha vinto ' + result[0].className);
+            for (var i = 0; i < result.length; i++)
+                $(result[i]).addClass('animated infinite rubberBand');
+            count = 10;
+        }
 
         else if (count == 9)
-            alert('pareggio');
+            alert('Pareggio');
 
         player = !player;
     }

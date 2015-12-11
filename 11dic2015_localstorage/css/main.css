@@ -1,0 +1,59 @@
+.error-text {
+    color: #ff0000;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+.log-button {
+    width: 100%;
+    background-color: #2e6da4;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+
+    -webkit-transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -ms-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+    transition: background-color 500ms;
+}
+
+.log-button:hover {
+    background-color: #204d74;
+    cursor: pointer;
+}
+
+a {
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -ms-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+}
+
+li {
+    -webkit-transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -ms-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+    transition: background-color 500ms;
+}
+
+li:hover {
+    background-color: #ccc;
+}
+
+.notification {
+    position: fixed;
+    bottom: 5%;
+    right: -10px;
+    padding: 2em;
+    text-align: center;
+    background-color: #0f0f0f;
+    color: #fff;
+    border-radius: 0.5em;
+    opacity: 0.8;
+}

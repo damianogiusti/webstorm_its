@@ -1,0 +1,38 @@
+body, html {
+    background-color: #eee;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    height: 100%;
+}
+
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+
+    -webkit-box-shadow: 0px 0px 5px #000;
+    -moz-box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 5px #000;
+}
+
+img {
+    float: left;
+    position: fixed;
+}
+
+.hidden {
+    display: none;
+}
+
+.slideshow {
+    position: relative;
+    padding-left: 8.5%;
+}
+
