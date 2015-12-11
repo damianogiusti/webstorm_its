@@ -9,12 +9,12 @@ function notificationAnim(e, a1, a2) {
     e.addClass(a1);
 
     window.setTimeout(function () {
-        notdiv.removeClass(a1);
-        notdiv.addClass(a2);
+        e.removeClass(a1);
+        e.addClass(a2);
 
         window.setTimeout(function () {
-            notdiv.hide();
-            notdiv.removeClass(a2)
+            e.hide();
+            e.removeClass(a2)
         }, 1000);
     }, 3000);
 }
