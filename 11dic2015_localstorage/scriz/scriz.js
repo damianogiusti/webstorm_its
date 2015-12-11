@@ -91,12 +91,10 @@ btnlogout.on('click', function () {
 });
 
 function notify(text) {
+    console.log(text);
     notspan.text(text);
-    notdiv.fadeIn();
 
-    window.setTimeout(function () {
-        notdiv.fadeOut();
-    }, 3000);
+    notificationAnim(notdiv, 'animated zoomIn', 'animated zoomOut');
 }
 
 function status() {
@@ -105,11 +103,34 @@ function status() {
     brand.text(user);
 
     if (isLogged) {
+        brand.addClass('animated infinite pulse')
         containerBtnLogin.hide();
         containerBtnLogout.show();
     }
     else {
+        brand.removeClass('animated infinite pulse')
         containerBtnLogin.show();
         containerBtnLogout.hide();
     }
+}
+
+/**
+ * Starts an animate.css and jQuery based animation on an html element
+ * @param e html element
+ * @param a1 animate.css IN class like 'animated [infinite] classname'
+ * @param a2 animate.css OUT class like 'animated [infinite] classname'
+ */
+function notificationAnim(e, a1, a2) {
+    e.show();
+    e.addClass(a1);
+
+    window.setTimeout(function () {
+        notdiv.removeClass(a1);
+        notdiv.addClass(a2);
+
+        window.setTimeout(function () {
+            notdiv.hide();
+            notdiv.removeClass(a2)
+        }, 1000);
+    }, 3000);
 }
