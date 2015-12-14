@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ITS fa rima con AngularJS</title>
+
+    <script type="text/javascript" src="angular/angular.min.js"></script>
+    <script type="text/javascript" src="scriz/app.js"></script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="MainController">
+    <input type="text" ng-model="testo">
+    <br/>
+
+    <div>{{testo | uppercase}}</div>
+
+    <button type="button"
+            ng-click="reset()"
+            ng-show="testo.length > 0">Clear
+    </button>
+
+    <div ng-repeat="p in products">
+        <h2>{{p.id}} - {{p.name}}</h2>
+
+        <p>{{p.description}}</p>
+        <button type="button"
+                ng-click="deleteProduct(p, $index)">Cancella
+        </button>
+        <hr/>
+    </div>
+</div>
+</body>
+</html>
