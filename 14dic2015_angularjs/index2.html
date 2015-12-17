@@ -1,0 +1,41 @@
+<!doctype>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <title>Title</title>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+</head>
+<body ng-app="myapp">
+
+<div class="container" ng-controller="MainController">
+    <div class="row">
+        <div class="col-xs-12">
+            <textarea ng-model="testo"
+                      cols="80"
+                      rows="10"
+                      maxlength="160"></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-offset-4 col-xs-4">
+            <button type="button" ng-click="inserisciFrase()">Invia</button>
+        </div>
+        <div class="col-xs-4">
+            <span ng-model="contatore">{{160 - testo.length}}</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <li ng-repeat="f in frasi">
+                <ul ng-click="eliminaFrase($index)">{{f.text.trim()}}</ul>
+            </li>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="scripts/scriz.js"></script>
+</body>
+</html>

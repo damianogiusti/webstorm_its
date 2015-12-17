@@ -1,0 +1,87 @@
+<!doctype>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title></title>
+</head>
+<body>
+
+<div class="container">
+    <header class="row">
+        <div class="col-xs-12">
+            <h1>Damiano Giusti - Sviluppo Web</h1>
+        </div>
+    </header>
+
+    <section class="row">
+        <nav class="navbar navbar-default collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="BookFlight.html">Prenota un volo</a></li>
+                <li><a href="Contacts.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <section class="row form">
+        <form action="#" class="col-md-offset-4 col-md-4">
+            <!-- Data Partenza -->
+            <div class="form-group row">
+                <label class="col-xs-6" for="txtDataPartenza">Data Partenza</label>
+                <input class="col-xs-6 form-control" type="date" name="dataPartenza" id="txtDataPartenza" required/>
+            </div>
+            <!-- Data Arrivo -->
+            <div class="form-group row">
+                <label class="col-xs-6" for="txtDataArrivo">Data Arrivo</label>
+                <input class="col-xs-6 form-control" type="date" name="dataArrivo" id="txtDataArrivo"/>
+            </div>
+            <!-- Numero persone -->
+            <div class="form-group row">
+                <label class="col-xs-6" for="txtNumeroPersone">Numero delle persone (max. 4)</label>
+                <input class="col-xs-6 form-control" type="number" name="numPersone" id="txtNumeroPersone" min="1" max="4"  required/>
+            </div>
+            <!-- A, R, A/R -->
+            <div class="form-group row">
+                <label class="col-xs-6">Tipo di viaggio</label>
+                <select name="cmbAR" id="cmbTipoViaggio" class="col-xs-6 form-control">
+                    <option>Andata</option>
+                    <option>Ritorno</option>
+                    <option>Andata e Ritorno</option>
+                </select>
+            </div>
+            <!-- Submit -->
+            <div class="form-group row">
+                <input type="button" id="btnPrenota" value="Prenota" class="btn btn-primary col-xs-12">
+            </div>
+        </form>
+    </section>
+
+    <section id="popup" style="display: none;">
+        <p>Prenotato un volo con i seguenti parametri:<br/>
+        <ul>
+            <li>Data Partenza: <span id="popupDP"></span></li>
+            <li>Data Arrivo: <span id="popupDA"></span></li>
+            <li>Numero di persone: <span id="popupNP"></span></li>
+            <li>Tipo di Viaggio: <span id="popupTV"></span></li>
+        </ul>
+        </p>
+    </section>
+
+</div>
+
+<footer class="row">
+    <p class="col-xs-12">Damiano Giusti</p>
+</footer>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/book-flight.js"></script>
+</body>
+</html>
