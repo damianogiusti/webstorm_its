@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="scriz/IndexController.js"></script>
+
+</head>
+<body ng-app="myApp">
+<div ng-controller="IndexController">
+    <input type="text" ng-model="name" name="" id="">
+    <h2>{{name}}</h2>
+
+    <!--
+    Angular aggancia la proprietà name in lettura e scrittura ad un oggetto $scope, che gestisce lui per collegare
+    html e js.
+    ng-model permette di definire una proprietà usabile in lettura e scrittura.
+    Le doppie graffe indicano un binding unidirezionale
+    -->
+
+    <button type="button" ng-click="reset()">Reset</button>
+
+    <br/>
+    <br/>
+
+    <div class="product-container">
+        <div class="product-item" ng-repeat="p in products">
+            <hr ng-show="$first"/>
+            <h2>{{p.description}}</h2>
+            <h3>{{p.code}}</h3>
+            <span>{{p.id}}</span>
+
+            <p>
+                First: {{$first}} <br/>
+                Last: {{$last}} <br>
+                Index: {{$index}} <br>
+            </p>
+            <button type="button" ng-click="delete(p, $index)">Cancella</button>
+            <hr ng-show="$last"/>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

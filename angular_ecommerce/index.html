@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS Ecommerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css"/>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="scriz/IndexController.js"></script>
+</head>
+<body ng-app="MyApp" ng-controller="IndexController">
+<nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+    <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse"
+            data-target="#collapsingNavbar">
+        ☰
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+    <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
+        <ul class="nav navbar-nav pull-right">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <span>
+                        Carrello
+                        <span ng-show="carrello.length > 0">
+                        ({{carrello.length}})
+                        </span>
+                    </span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myAlert" data-toggle="collapse">Wow</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- qui inizia tutto -->
+
+
+<div class="container" id="main">
+    <!-- sidebar -->
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="nav-item"><a class="nav-link" href="#">Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Nav item</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Nav item</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Another</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Nav item</a></li>
+                <li class="nav-item"><a class="nav-link" href="">One more</a></li>
+            </ul>
+        </div>
+        <!--/col-->
+
+        <div class="col-md-9 col-lg-10 main">
+
+            <!--toggle sidebar button-->
+            <p class="hidden-md-up">
+                <button type="button" class="btn btn-primary-outline btn-sm" data-toggle="offcanvas"><i
+                        class="fa fa-chevron-left"></i> Menu
+                </button>
+            </p>
+
+            <h1 class="display-1 hidden-xs-down">
+                AngularJS e-commerce test
+            </h1>
+            <br><br>
+
+
+            <!-- qui ce un alert che non so cosa sia -->
+            <div class="alert alert-warning fade collapse" role="alert" id="myAlert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <strong>Holy guacamole!</strong> It's free.. this is an example theme.
+            </div>
+
+            <!-- qui iniziano le card -->
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6" ng-repeat="p in prodotti">
+                    <div class="card">
+                        <div class="card-block bg-success" ng-show="$index % 4 == 0">
+                            <div class="row">
+                                <h4 class="col-xs-12">{{p.nome}}</h4>
+                            </div>
+                            <div class="row">
+                                <span class="col-xs-12">{{p.descrizione}}</span>
+                            </div>
+                            <div class="row ">
+                                <div class="col-xs-9">
+                                    {{p.prezzo}}&euro;
+                                </div>
+                                <div class="col-xs-2 add-to-cart" ng-click="addToCart(p)">
+                                    <span class="glyphicon glyphicon-shopping-cart" style="color: #000"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block bg-danger" ng-show="$index % 4 == 1">
+                            <div class="row">
+                                <h4 class="col-xs-12">{{p.nome}}</h4>
+                            </div>
+                            <div class="row">
+                                <span class="col-xs-12">{{p.descrizione}}</span>
+                            </div>
+                            .row>.col.xs.12>.well
+                            <div class="row ">
+                                <div class="col-xs-9">
+                                    {{p.prezzo}}&euro;
+                                </div>
+                                <div class="col-xs-2 add-to-cart" ng-click="addToCart(p)">
+                                    <span class="glyphicon glyphicon-shopping-cart" style="color: #000"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block bg-info" ng-show="$index % 4 == 2">
+                            <div class="row">
+                                <h4 class="col-xs-12">{{p.nome}}</h4>
+                            </div>
+                            <div class="row">
+                                <span class="col-xs-12">{{p.descrizione}}</span>
+                            </div>
+                            <div class="row ">
+                                <div class="col-xs-9">
+                                    {{p.prezzo}}&euro;
+                                </div>
+                                <div class="col-xs-2 add-to-cart" ng-click="addToCart(p)">
+                                    <span class="glyphicon glyphicon-shopping-cart" style="color: #000"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-block bg-warning" ng-show="$index % 4 == 3">
+                            <div class="row">
+                                <h4 class="col-xs-12">{{p.nome}}</h4>
+                            </div>
+                            <div class="row">
+                                <span class="col-xs-12">{{p.descrizione}}</span>
+                            </div>
+                            <div class="row ">
+                                <div class="col-xs-9">
+                                    {{p.prezzo}}&euro;
+                                </div>
+                                <div class="col-xs-2 add-to-cart" ng-click="addToCart(p)">
+                                    <span class="glyphicon glyphicon-shopping-cart" style="color: #000"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+
+            <div class="form">
+                <div class="form-group">
+                    <label>Nome prodotto
+                        <input type="text" ng-model="nomeProdotto" class="form-control">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Descrizione
+                        <textarea ng-model="descrizione" class="form-control"></textarea>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Prezzo
+                        <input type="number" ng-model="prezzo" class="form-control">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Categoria
+                        <select class="form-control" ng-model="categoria">
+                            <option>Elettronica</option>
+                            <option>Hobbistica</option>
+                            <option>Giardinaggio</option>
+                            <option>Cucina</option>
+                            <option>Cazzate</option>
+                        </select>
+                    </label>
+                </div>
+                <button type="button" class="btn-primary btn" ng-click="add()">Aggiungi prodotto</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--scripts loaded here-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
