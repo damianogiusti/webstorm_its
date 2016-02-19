@@ -1,0 +1,22 @@
+<div class="row">
+    <article class="col-xs-12" ng-repeat="a in list">
+        <div class="row">
+            <h2 class="col-md-12">
+                <a ui-sref="articolo({id:a.id})">{{a.titolo}}</a>
+            </h2>
+        </div>
+        <div class="row">
+            <p class="col-md-12"><i>{{a.dataIns | amDateFormat:'DD-MM-YYYY HH:mm:ss'}}</i></p>
+        </div>
+        <div class="row">
+            <p class="col-md-12">
+                {{a.corpo.substr(0, 200)}}
+                <a ui-sref="articolo({id:a.id})">...</a></p>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-xs-1">
+                <span class="label label-primary tag" ng-repeat="tag in a.tags">{{tag}}</span>
+            </div>
+        </div>
+    </article>
+</div>

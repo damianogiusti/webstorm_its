@@ -1,0 +1,40 @@
+<header class="row">
+    <h1 class="col-md-12">Dettaglio</h1>
+</header>
+<br/>
+
+<div class="progress" ng-show="showPB">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+         aria-valuemax="100" style="width: 100%">
+    </div>
+</div>
+
+<table class="table table-hover">
+    <tr>
+        <td>Title</td>
+        <td ng-bind="earthquake.properties.title"></td>
+    </tr>
+    <tr>
+        <td>Place</td>
+        <td ng-bind="earthquake.properties.place"></td>
+    </tr>
+    <tr>
+        <td>Accurate location</td>
+        <td>({{earthquake.properties.products.origin[0].properties.latitude}})
+            ({{earthquake.properties.products.origin[0].properties.longitude}})
+        </td>
+    </tr>
+    <tr>
+        <td>Magnitude</td>
+        <td ng-bind="earthquake.properties.mag"></td>
+    </tr>
+    <tr>
+        <td>Happened</td>
+        <td am-time-ago="earthquake.properties.time"></td>
+    </tr>
+</table>
+
+<img ng-src="https://maps.googleapis.com/maps/api/staticmap?center={{earthquake.properties.products.origin[0].properties.latitude}},{{earthquake.properties.products.origin[0].properties.longitude}}&zoom=9&size=400x400&
+markers=color:blue%7C{{earthquake.properties.products.origin[0].properties.latitude}},{{earthquake.properties.products.origin[0].properties.longitude}}">
+
+

@@ -1,0 +1,83 @@
+<header class="row">
+    <h1 class="col-md-12">Videoteca</h1>
+</header>
+
+<section class="row">
+    <h4 class="col-md-12">{{message}}</h4>
+</section>
+
+<!--
+<button
+        type="button"
+        class="btn btn-default"
+        ng-click="goToContact()">Vai ai contatti
+</button>
+-->
+
+<div class="row">
+    <form class="col-md-offset-4 form form-inline">
+        <div class="form-group">
+            <label for="txtTitle">Titolo film</label>
+            <input type="text" id="txtTitle" ng-model="titolo" class="form-control">
+        </div>
+        <button type="button" ng-click="query()" class="btn dg-btn">
+            Cerca
+            <span class="glyphicon glyphicon-search"></span>
+        </button>
+    </form>
+</div>
+
+<section class="row" ng-show="numeroPagine == 0">
+    <div class="col-md-12">
+        <h2 id="benvenuto">Benvenuto</h2>
+        <p id="benvenutoDescr">Per iniziare, digita il nome di un film
+            nella casella di testo sopra, quindi Cerca.</p>
+    </div>
+</section>
+
+<section class="row elenco-film">
+    <div class="col-md-6" ng-repeat="f in elencoFilm">
+        <div class="well">
+            <div class="row">
+                <div class="col-xs-6">
+                    <img ng-src="{{f.Poster}}" alt="Locandina non disponibile" height="300">
+                </div>
+                <div class="col-xs-6">
+                    <div class="row">
+                        <h2 class="col-md-12">{{f.Title}}</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="label label-info">{{f.Year}}</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <a class="col-md-12" ui-sref="details({id:f.imdbID})">dettaglio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="row">
+    <div class="col-xs-1" ng-click="(numeroPagina > 1 ? previous() : undefined)">
+        <div class="label label-default">
+            <span class="glyphicon glyphicon-arrow-left"></span>
+        </div>
+    </div>
+    <div class="col-md-offset-5 col-xs-2">
+        <div class="label label-default">
+            <span ng-show="numeroPagine > 0">{{numeroPagina}} / {{numeroPagine}}</span>
+        </div>
+    </div>
+    <div class="col-md-offset-3 col-xs-1" ng-click="(numeroPagina < numeroPagine ? next() : undefined)">
+        <div class="label label-default">
+            <span class="glyphicon glyphicon-arrow-right"></span>
+        </div>
+    </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="scripts/main.js"></script>

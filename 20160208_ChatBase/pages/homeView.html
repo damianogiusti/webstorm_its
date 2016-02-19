@@ -1,0 +1,81 @@
+<div class="row">
+    <h1 class="col-md-12">Home</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+
+        <div class="row container-messaggi pre-scrollable">
+            <div class="col-xs-12">
+                <!-- messaggio -->
+                <div class="row" ng-repeat="m in privateMessages">
+                    <div ng-class="m.mine ? 'col-xs-4 col-xs-offset-8 messaggio verde' : 'col-xs-4 messaggio blu'">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <span class="message-user">{{m.user}} - <i am-time-ago="{{m.date}}"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="message-received col-xs-4">
+                                <p>{{m.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end messaggio -->
+            </div>
+        </div>
+
+        <div class="row riga-invio">
+            <div class="col-md-12 input-group">
+                <input type="text" ng-model="testoMessaggioPrivato" class="form-control">
+                    <span class="input-group-addon"
+                          ng-click="inviaMessaggioPrivato('Damiano', 'AndreaMinato')">
+                        <span class="glyphicon glyphicon-send"></span>
+                    </span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- container messaggi -->
+    <div class="col-md-6">
+
+        <div class="row container-messaggi pre-scrollable">
+            <div class="col-xs-12">
+                <!-- messaggio -->
+                <div class="row" ng-repeat="m in messages">
+                    <div ng-class="m.mine ? 'col-xs-4 col-xs-offset-8 messaggio verde' : 'col-xs-4 messaggio blu'">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <span class="message-user">{{m.user}} - <i am-time-ago="{{m.date}}"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="message-received col-xs-4">
+                                <p>{{m.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end messaggio -->
+            </div>
+        </div>
+
+        <div class="row riga-invio">
+            <div class="col-md-12 input-group">
+                <input type="text" ng-model="testoMessaggio" class="form-control">
+                    <span class="input-group-addon"
+                          ng-click="inviaMessaggio('ISIS')">
+                        <span class="glyphicon glyphicon-bullhorn"></span>
+                    </span>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- end container messaggi -->
+</div>

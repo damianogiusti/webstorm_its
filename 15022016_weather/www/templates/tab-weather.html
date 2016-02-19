@@ -1,0 +1,18 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view>
+  <ion-content class="padding">
+
+    <div class="row">
+      <img class="col col-20" ng-src="http://openweathermap.org/img/w/{{meteo.citta.weather[0].icon}}.png" alt="diost*%$&">
+      <h1 class="col">{{meteo.citta.name}},&nbsp;{{meteo.citta.sys.country}}</h1>
+    </div>
+    <div class="row">
+      <p class="col">{{meteo.citta.weather[0].description}}</p>
+    </div>
+  </ion-content>
+</ion-view>

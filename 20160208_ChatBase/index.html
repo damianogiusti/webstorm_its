@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript"
+            src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript"
+            src="bower_components/signalr/jquery.signalR.js"></script>
+    <script type="text/javascript"
+            src="http://its-chat.dottor.net/signalr/hubs"></script>
+
+    <script type="text/javascript"
+            src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript"
+            src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+
+    <script type="text/javascript"
+            src="scripts/app.js"></script>
+
+    <script type="text/javascript"
+            src="services/hubChatService.js"></script>
+
+    <script type="text/javascript"
+            src="pages/homeController.js"></script>
+    <script type="text/javascript"
+            src="pages/contactController.js"></script>
+    <script type="text/javascript"
+            src="pages/detailsController.js"></script>
+    <script type="text/javascript"
+            src="pages/editController.js"></script>
+    <script type="text/javascript"
+            src="pages/insertController.js"></script>
+
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-moment/angular-moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/locale/it.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body ng-app="myApp">
+<!--
+<ul>
+    <li><a ui-sref="home">Home</a></li>
+    <li><a ui-sref="contact">Contatti</a></li>
+    <li><a ui-sref="insert">Crea nuovo prodotto</a></li>
+</ul>
+-->
+<div class="container">
+
+    <div ui-view></div>
+</div>
+</body>
+</html>

@@ -19,6 +19,8 @@ var form = $('form');
 
 $(function () {
     var date = new Date();
+    $(txtDataPartenza).datepicker();
+    $(txtDataArrivo).datepicker();
     txtDataPartenza.val(date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate());
     txtDataArrivo.val(date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate());
 });

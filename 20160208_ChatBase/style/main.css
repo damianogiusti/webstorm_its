@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.container {
+    -webkit-box-shadow: 2px 2px 3px #333;
+    -moz-box-shadow: 2px 2px 5px #333;
+    box-shadow: 2px 2px 5px #333;
+    height: 100%;
+}
+
+.container-messaggi {
+    height: 1000px;
+    background-color: #eeeeee;
+}
+
+.messaggio {
+    border-radius: 5px;
+    margin: 5px;
+    -webkit-box-shadow: 2px 2px 3px #333;
+    -moz-box-shadow: 2px 2px 5px #333;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.blu {
+    background-color: #2b669a;
+}
+
+.verde {
+    background-color: #38ba26;
+}
+
+.riga-invio {
+    bottom: 0;
+}

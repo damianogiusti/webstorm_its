@@ -1,0 +1,35 @@
+html, body {
+    background-color: #263238;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica,  sans-serif;
+}
+
+.container {
+    background-color: #ECEFF1;
+    box-shadow: 1px 1px 4px #eee;
+    height: 100%;
+}
+
+.articolo {
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #222;
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    max-width: 500px;
+}
+
+.articolo h2 {
+    margin-top: 0;
+    color: #37474F;
+}
+
+img {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.dg-form-control {
+    margin-top: 10px;
+}

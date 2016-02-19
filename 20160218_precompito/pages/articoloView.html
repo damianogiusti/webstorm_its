@@ -1,0 +1,42 @@
+<div class="row">
+    <h2 class="col-md-12">{{articolo.titolo}}</h2>
+</div>
+<div class="row">
+    <p class="col-md-12"><i>{{articolo.autore}} - {{articolo.dataIns | amDateFormat:'HH:mm:ss DD/MM/YYYY'}}</i></p>
+</div>
+<div class="row">
+    <div class="col-md-12 col-xs-12">
+        <span class="label label-primary tag" ng-repeat="tag in articolo.tags">{{tag}}</span>
+    </div>
+</div>
+<br>
+<div class="row">
+    <p class="col-md-12">{{articolo.corpo}}</p>
+</div>
+
+<section class="row">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>Commenti</h3>
+        </div>
+    </div>
+    <div class="row" ng-repeat="commento in commenti">
+        <div class="col-sm-offset-2 col-sm-8 col-xs-12 commento">
+            <div class="row">
+                <div class="col-sm-3">
+                    {{commento.autore}}<br>{{commento.data | amDateFormat:'HH:mm:ss DD/MM/YYYY'}}
+                </div>
+                <div class="col-sm-9">
+                    <p>{{commento.testo}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-xs-12">
+            . . .
+        </div>
+    </div>
+</section>
+
+

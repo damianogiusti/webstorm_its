@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+
+    <script type="text/javascript"
+            src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript"
+            src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script type="text/javascript"
+            src="scripts/app.js"></script>
+
+    <script type="text/javascript"
+            src="pages/homeController.js"></script>
+    <script type="text/javascript"
+            src="pages/contactController.js"></script>
+    <script type="text/javascript"
+            src="pages/detailsController.js"></script>
+    <script type="text/javascript"
+            src="pages/editController.js"></script>
+    <script type="text/javascript"
+            src="pages/insertController.js"></script>
+</head>
+<body ng-app="myApp">
+
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-collapse">
+            <ul class="container-fluid nav navbar-nav">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="contact">Contatti</a></li>
+                <li><a ui-sref="insert">Crea nuovo prodotto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div ui-view></div>
+
+</div>
+</body>
+</html>

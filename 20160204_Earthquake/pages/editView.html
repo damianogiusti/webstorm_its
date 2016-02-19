@@ -1,0 +1,64 @@
+<div class="row">
+    <h1 class="col-md-12">Modifica</h1>
+</div>
+
+<div class="form">
+    <div class="row col-md-offset-3 dg-form-control">
+        <label for="txtNome" class="col-md-3">Nome</label>
+        <div class="col-md-6">
+            <input type="text"
+                   name="name"
+                   id="txtNome"
+                   ng-model="name"
+                   class="form-control"/>
+        </div>
+    </div>
+    <div class="row col-md-offset-3 dg-form-control">
+        <label for="txtCategoria" class="col-md-3">Categoria</label>
+        <div class="col-md-6">
+            <input type="text"
+                   name="name"
+                   id="txtCategoria"
+                   ng-model="category"
+                   class="form-control"/>
+        </div>
+    </div>
+    <div class="row col-md-offset-3 dg-form-control">
+        <label for="txtPrezzo" class="col-md-3">Prezzo</label>
+        <div class="col-md-6">
+            <input type="text"
+                   name="name"
+                   id="txtPrezzo"
+                   ng-model="price"
+                   class="form-control"/>
+        </div>
+    </div>
+    <div class="row col-md-offset-3 dg-form-control">
+        <label for="txtNome" class="col-md-3">Descrizione</label>
+        <div class="col-md-6">
+            <textarea id="txtDescrizione"
+                      class="form-control"
+                      rows="10"
+                      cols="10"
+                      ng-model="description"></textarea>
+        </div>
+    </div>
+    <div class="row col-md-offset-3 dg-form-control">
+        <div class="col-md-6">
+            <button class="btn btn-primary"
+                    style="width: 100%;"
+                    type="button"
+                    ng-click="updateValues()">Modifica
+            </button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-danger"
+                    style="width: 100%;"
+                    type="button"
+                    ng-click="deleteValues()">Elimina
+            </button>
+        </div>
+
+    </div>
+</div>
+

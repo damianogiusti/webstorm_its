@@ -1,0 +1,34 @@
+<div class="row">
+    <h1 class="col-md-12">Dettagli film</h1>
+</div>
+<br/>
+<div class="row">
+    <div ng-style="{'background-image': 'url(' + film.Poster + ')'}"
+         alt="Locandina non disponibile"
+         class="col-md-6"
+         id="locandina-dettaglio"></div>
+    <div class="col-md-6">
+        <div class="row">
+            <h2 class="col-md-12">{{film.Title}}</h2>
+        </div>
+        <div class="row">
+            <h4 class="col-md-12">{{film.Year}}</h4>
+        </div>
+        <div class="row">
+            <h4 class="col-md-12">Durata: {{film.Runtime}}</h4>
+        </div>
+        <div class="row">
+            <h4 class="col-md-12">{{film.Genre}}</h4>
+        </div>
+        <div class="row">
+            <h4 class="col-md-12">Punteggio IMdb: {{film.imdbRating}}</h4>
+        </div>
+        <div class="row">
+            <h4 class="col-md-1" ng-repeat="i in range(film.imdbRating)">
+                <span class="glyphicon glyphicon-star"></span>
+            </h4>
+        </div>
+    </div>
+</div>
+
+
