@@ -1,0 +1,93 @@
+<section class="row">
+    <div class="col-md-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <b>Add a new person</b>
+            </div>
+            <div class="panel-body">
+                <div class="row form-group">
+                    <label for="name" class="col-xs-3">Name:</label>
+                    <div class="col-xs-9">
+                        <input type="text" id="name" ng-model="person.name" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="surname" class="col-xs-3">Surname:</label>
+                    <div class="col-xs-9">
+                        <input type="text" id="surname" ng-model="person.surname" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="address" class="col-xs-3">Address:</label>
+                    <div class="col-xs-9">
+                        <input type="text" id="address" ng-model="person.address" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="city" class="col-xs-3">City:</label>
+                    <div class="col-xs-9">
+                        <input type="text" id="city" ng-model="person.city" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="sex" class="col-xs-3">Sex:</label>
+                    <div class="col-xs-9">
+                        <select id="sex" ng-model="person.sex" class="form-control" required>
+                            <option value="M" ng-selected="(person.sex == 'M')">Male</option>
+                            <option value="F" ng-selected="(person.sex == 'F')">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="tel" class="col-xs-3">Tel:</label>
+                    <div class="col-xs-9">
+                        <input type="tel" id="tel" ng-model="person.tel" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="email" class="col-xs-3">E-mail:</label>
+                    <div class="col-xs-9">
+                        <input type="email" id="email" ng-model="person.email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="birthday" class="col-xs-3">Birthday date:</label>
+                    <div class="col-xs-9">
+                        <input type="date" id="birthday" ng-model="person.birthday" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="cityOfBirth" class="col-xs-3">City of birth:</label>
+                    <div class="col-xs-9">
+                        <input type="text" id="cityOfBirth" ng-model="person.cityOfBirth" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="fiscalCode" class="col-xs-3">Code:</label>
+                    <div class="col-xs-9">
+                        <input type="text" id="fiscalCode" ng-model="person.fiscalCode" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="row">
+    <div class="col-md-2">
+        <button type="button"
+                class="btn btn-info"
+                ng-click="addPerson()">
+            <span class="fa fa-check"></span>
+            <span>Add person</span>
+        </button>
+    </div>
+    <div class="col-md-offset-6 col-md-2">
+        <button type="button"
+                class="btn btn-default"
+                ui-sref="home()">
+            <span class="fa fa-angle-double-left"></span>
+            <span>Back without saving</span>
+        </button>
+    </div>
+</div>

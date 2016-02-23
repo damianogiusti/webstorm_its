@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Finale</title>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+
+
+    <script type="text/javascript"
+            src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript"
+            src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript"
+            src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript"
+            src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript"
+            src="bower_components/angular-moment/angular-moment.min.js"></script>
+
+    <script type="text/javascript"
+            src="scripts/app.js"></script>
+
+    <script type="text/javascript"
+            src="services/dataAccessService.js"></script>
+
+    <script type="text/javascript"
+            src="pages/homeController.js"></script>
+    <script type="text/javascript"
+            src="pages/contactController.js"></script>
+    <script type="text/javascript"
+            src="pages/detailsController.js"></script>
+    <script type="text/javascript"
+            src="pages/editController.js"></script>
+    <script type="text/javascript"
+            src="pages/insertController.js"></script>
+    <script type="text/javascript"
+            src="pages/deleteController.js"></script>
+</head>
+<body ng-app="myApp">
+
+<div class="container">
+    <header class="row dg-header">
+        <div class="col-md-12">
+            <h1>Prova finale</h1>
+        </div>
+    </header>
+
+    <section class="row dg-content">
+        <div class="col-md-3 dg-navmenu">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="insert">Add a person</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-offset-1 col-md-7">
+            <div ui-view></div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

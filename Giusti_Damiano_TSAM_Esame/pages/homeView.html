@@ -1,0 +1,22 @@
+<header class="row view-header">
+    <div class="col-md-12">
+        <h1>List of persons</h1>
+    </div>
+</header>
+
+<section class="person row" ng-repeat="p in people">
+    <div class="col-md-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <span><b>{{p.name}}&nbsp;{{p.surname}}</b></span>
+            </div>
+            <div class="panel-body">
+                <p>{{p.address}},&nbsp;{{p.city}}</p>
+                <a ui-sref="details({id:p.id})">more details</a>
+            </div>
+        </div>
+    </div>
+</section>
+<button type="button" class="btn btn-default"
+        ng-click="clearStorage()">Empty storage
+</button>

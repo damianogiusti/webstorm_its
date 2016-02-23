@@ -1,0 +1,71 @@
+<section class="row dg-details">
+    <div class="col-md-12">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <b>Details</b>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <p class="col-xs-12"><b>{{person.name}}&nbsp;{{person.surname}}</b></p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-3">Sex:</p>
+                    <p class="col-xs-9">{{(person.sex == 'M') ? 'Male' : 'Female'}}</p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-3">Address:</p>
+                    <p class="col-xs-9">{{person.address}},&nbsp;{{person.city}}</p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-3">Tel:</p>
+                    <p class="col-xs-9">{{person.tel}}</p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-3">E-mail:</p>
+                    <p class="col-xs-9">{{person.email}}</p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-3">Birthday date:</p>
+                    <p class="col-xs-9">{{person.birthday | date: 'dd/MM/yyyy'}}</p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-3">City of birth:</p>
+                    <p class="col-xs-9">{{person.cityOfBirth}}</p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-3">Code:</p>
+                    <p class="col-xs-9">{{person.fiscalCode}}</p>
+                </div>
+
+                <!--<p>{{person.}}</p>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="row">
+    <div class="col-md-2">
+        <button type="button"
+                class="btn btn-info"
+                ui-sref="edit({id:person.id})">
+            <span class="fa fa-pencil"></span>
+            <span>Edit</span>
+        </button>
+    </div>
+    <div class="col-md-2">
+        <button type="button"
+                class="btn btn-danger"
+                ui-sref="delete({id:person.id})">
+            <span class="fa fa-trash"></span>
+            <span>Delete</span>
+        </button>
+    </div>
+    <div class="col-md-offset-6 col-md-2">
+        <button type="button"
+                class="btn btn-default"
+                ui-sref="home()">
+            <span class="fa fa-angle-double-left"></span>
+            <span>Back</span>
+        </button>
+    </div>
+</div>
